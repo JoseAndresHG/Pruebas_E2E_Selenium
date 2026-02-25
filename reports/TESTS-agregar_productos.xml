@@ -1,0 +1,31 @@
+<testsuite name="agregar_productos.agregar productos al carrito" tests="1" errors="0" failures="0" skipped="0" time="9.888612" timestamp="2026-02-25T17:15:37.876455" hostname="Joses-MacBook-Air.local"><testcase classname="agregar_productos.agregar productos al carrito" name="Agregar dos productos al carrito correctamente" status="passed" time="9.888612"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Agregar dos productos al carrito correctamente
+    Given el usuario navega a la página pagina https://www.demoblaze.com/ ... passed in 0.944s
+    When el usuario selecciona "INICIAR_SESION" ... passed in 0.290s
+    And el usuario ingresa "JoseH" en el campo "USERNAME" ... passed in 0.775s
+    And el usuario ingresa "Test1234*" en el campo "PASSWORD" ... passed in 0.165s
+    And el usuario selecciona "BOTON_LOGIN" ... passed in 0.125s
+    Then el usuario debería ver su nombre de usuario en el menú ... passed in 1.138s
+    When el usuario selecciona "PRODUCTO1" ... passed in 0.495s
+    And el usuario agrega el producto al "CARRITO" ... passed in 0.686s
+    And el usuario acepta el popup de confirmación ... passed in 0.519s
+    And el usuario selecciona "HOME_CATALOGO" ... passed in 0.370s
+    And el usuario selecciona "PRODUCTO2" ... passed in 0.912s
+    And el usuario agrega el producto al "CARRITO" ... passed in 0.654s
+    And el usuario acepta el popup de confirmación ... passed in 0.518s
+    When el usuario visualiza los productos en el "CARRITO_COMPRAS" ... passed in 0.506s
+    And el usuario selecciona "REALIZAR_PEDIDO" ... passed in 0.139s
+    And el usuario diligencia "Jose" en el campo "NAME" ... passed in 0.690s
+    And el usuario diligencia "Colombia" en el campo "COUNTRY" ... passed in 0.163s
+    And el usuario diligencia "Bogota" en el campo "CITY" ... passed in 0.162s
+    And el usuario diligencia "10992422220" en el campo "CREDIT_CARD" ... passed in 0.162s
+    And el usuario diligencia "OCT" en el campo "MONTH" ... passed in 0.148s
+    And el usuario diligencia "2028" en el campo "YEAR" ... passed in 0.193s
+    Then el usuario selecciona "COMPRAR" ... passed in 0.133s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
