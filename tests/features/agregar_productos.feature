@@ -16,12 +16,9 @@ Feature: agregar productos al carrito
       And el usuario acepta el popup de confirmación
     When el usuario visualiza los productos en el "CARRITO_COMPRAS"
       And el usuario selecciona "REALIZAR_PEDIDO"
-      And el usuario diligencia "Jose" en el campo "NAME"
-      And el usuario diligencia "Colombia" en el campo "COUNTRY"
-      And el usuario diligencia "Bogota" en el campo "CITY"
-      And el usuario diligencia "10992422220" en el campo "CREDIT_CARD"
-      And el usuario diligencia "OCT" en el campo "MONTH"
-      And el usuario diligencia "2028" en el campo "YEAR"
+      And el usuario diligencia el formulario con los siguientes datos
+         | NAME  | COUNTRY  | CITY   | CREDIT_CARD | MONTH | YEAR |
+         | Jose  | Colombia | Bogota | 10992422220 | OCT   | 2028 |
     Then el usuario selecciona "COMPRAR"
 
 
