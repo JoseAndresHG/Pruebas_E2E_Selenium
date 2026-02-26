@@ -45,15 +45,16 @@ def step_impl(context, variable):
     elemento.click()
 
 
-@step('el usuario diligencia "{texto}" en el campo "{nombre_variable}"')
-def step_impl(context, texto, nombre_variable):
-    xpath = getattr(CartLocators, nombre_variable)
+@step('el usuario diligencia el formulario con los siguientes datos')
+def step_impl(context):
+    for row in context.table:
+        for campo in row.headings:
+            valor = row[campo]
+            xpath = getattr(CartLocators, campo)
 
-    wait = WebDriverWait(context.driver, 10)
-    elemento = wait.until(
-        ec.element_to_be_clickable((By.XPATH, xpath))
-    )
-    context.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", elemento)
+            elemento = WebDriverWait(context.driver, 10).until(
+                ec.element_to_be_clickable((By.XPATH, xpath))
+            )
 
-    elemento.clear()
-    elemento.send_keys(texto)
+            elemento.clear()
+            elemento.send_keys(valor)
