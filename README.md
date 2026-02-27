@@ -1,6 +1,6 @@
 # Nombre de tu Proyecto
 
-> Automatizacion Web para flujo de compra y validacion de servicios Api.
+> Pruebas de automatizciòn
 
 ---
 
@@ -14,10 +14,7 @@
 ---
 
 ## 🚀 Sobre el Proyecto
-Automatizacion Web para flujo de compra E2E, y servicios Api.
-
-
----
+Automatizacion Web con selenium y servicios Api con Robot framework.
 
 ## 🛠️ Tecnologías Utilizadas
 | Tecnología | Uso      |
