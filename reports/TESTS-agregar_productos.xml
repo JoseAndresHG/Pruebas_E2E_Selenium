@@ -1,26 +1,26 @@
-<testsuite name="agregar_productos.agregar productos al carrito" tests="1" errors="0" failures="0" skipped="0" time="10.997587" timestamp="2026-02-26T13:43:09.215639" hostname="Joses-MacBook-Air.local"><testcase classname="agregar_productos.agregar productos al carrito" name="Agregar dos productos al carrito correctamente" status="passed" time="10.997587"><system-out>
+<testsuite name="agregar_productos.agregar productos al carrito" tests="1" errors="0" failures="0" skipped="0" time="10.864292" timestamp="2026-02-26T18:51:01.818587" hostname="Joses-MacBook-Air.local"><testcase classname="agregar_productos.agregar productos al carrito" name="Agregar dos productos al carrito correctamente" status="passed" time="10.864292"><system-out>
 <![CDATA[
 @scenario.begin
   Scenario: Agregar dos productos al carrito correctamente
-    Given el usuario navega a la página pagina https://www.demoblaze.com/ ... passed in 0.498s
-    When el usuario selecciona "INICIAR_SESION" ... passed in 0.990s
-    And el usuario ingresa "JoseH" en el campo "USERNAME" ... passed in 0.811s
-    And el usuario ingresa "Test1234*" en el campo "PASSWORD" ... passed in 0.162s
-    And el usuario selecciona "BOTON_LOGIN" ... passed in 0.164s
-    Then el usuario debería ver su nombre de usuario en el menú ... passed in 1.595s
-    When el usuario selecciona "PRODUCTO1" ... passed in 0.518s
-    And el usuario agrega el producto al "CARRITO" ... passed in 0.659s
-    And el usuario acepta el popup de confirmación ... passed in 0.603s
-    And el usuario selecciona "HOME_CATALOGO" ... passed in 0.492s
-    And el usuario selecciona "PRODUCTO2" ... passed in 0.944s
+    Given el usuario navega a la página pagina https://www.demoblaze.com/ ... passed in 1.194s
+    When el usuario selecciona "INICIAR_SESION" ... passed in 0.355s
+    And el usuario ingresa "JoseH" en el campo "USERNAME" ... passed in 0.739s
+    And el usuario ingresa "Test1234*" en el campo "PASSWORD" ... passed in 0.155s
+    And el usuario selecciona "BOTON_LOGIN" ... passed in 0.138s
+    Then el usuario debería ver su nombre de usuario en el menú ... passed in 1.214s
+    When el usuario selecciona "PRODUCTO1" ... passed in 0.517s
+    And el usuario agrega el producto al "CARRITO" ... passed in 0.869s
+    And el usuario acepta el popup de confirmación ... passed in 0.527s
+    And el usuario selecciona "HOME_CATALOGO" ... passed in 0.413s
+    And el usuario selecciona "PRODUCTO2" ... passed in 0.902s
     And el usuario agrega el producto al "CARRITO" ... passed in 0.675s
-    And el usuario acepta el popup de confirmación ... passed in 0.520s
-    When el usuario visualiza los productos en el "CARRITO_COMPRAS" ... passed in 0.552s
+    And el usuario acepta el popup de confirmación ... passed in 0.522s
+    When el usuario visualiza los productos en el "CARRITO_COMPRAS" ... passed in 0.525s
     And el usuario selecciona "REALIZAR_PEDIDO" ... passed in 0.150s
-    And el usuario diligencia el formulario con los siguientes datos ... passed in 1.523s
+    And el usuario diligencia el formulario con los siguientes datos ... passed in 1.832s
       | NAME | COUNTRY  | CITY   | CREDIT_CARD | MONTH | YEAR |
       | Jose | Colombia | Bogota | 10992422220 | OCT   | 2028 |
-    Then el usuario selecciona "COMPRAR" ... passed in 0.142s
+    Then el usuario selecciona "COMPRAR" ... passed in 0.136s
 
 @scenario.end
 --------------------------------------------------------------------------------
