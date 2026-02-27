@@ -34,7 +34,7 @@ Pasos para replicar el entorno de ejecucion:
 
 1. **Clona el repositorio**
    ```bash
-   git clone https://github.com/JoseAndresHG/Selenium-Behave-Automation.git
+   git clone https://github.com/JoseAndresHG/Pruebas_E2E_Selenium.git
    
 2. **Comandos de ejecucion**
     
