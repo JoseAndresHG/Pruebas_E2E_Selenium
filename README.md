@@ -35,6 +35,10 @@ Pasos para replicar el entorno de ejecucion:
 1. **Clona el repositorio**
    ```bash
    git clone https://github.com/JoseAndresHG/Pruebas_E2E_Selenium.git
+
+   1.1 Instalar requerimientos
+
+   pip install -r requirements.txt
    
 2. **Comandos de ejecucion**
     
