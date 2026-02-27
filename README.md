@@ -14,7 +14,7 @@
 ---
 
 ## 🚀 Sobre el Proyecto
-Automatizacion Web para flujo de compra E2E para dos pruducto en la plataforma https://www.demoblaze.com/
+Automatizacion Web para flujo de compra E2E, y servicios Api.
 
 
 ---
@@ -33,7 +33,7 @@ Automatizacion Web para flujo de compra E2E para dos pruducto en la plataforma h
 
 ## ⚙️ Instalación
 
-Pasos para replicar el entorno de desarrollo:
+Pasos para replicar el entorno de ejecucion:
 
 1. **Clona el repositorio**
    ```bash
